@@ -1,0 +1,19 @@
+{
+  "name": "leylasolo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Hello, World!\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrssanna/leylasite.git"
+  },
+  "author": "anna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrssanna/leylasite/issues"
+  },
+  "homepage": "https://github.com/mrssanna/leylasite#readme"
+}
