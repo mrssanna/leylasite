@@ -1,6 +1,9 @@
 .idea
-build
+build/
 css/*.css
-node_modules
+node_modules/
 maket
 *.txt
+
+Thumbs.db
+.DS_Store
