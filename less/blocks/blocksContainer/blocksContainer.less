@@ -1,0 +1,17 @@
+@import "../../variables";
+
+.blocksContainer {
+  width: 280px;
+  //width: auto;
+  margin: 0 auto;
+
+  .respondTo(tablet, {
+    width: 688px;
+    display: flex;
+    flex-wrap: wrap;
+  });
+
+  .respondTo(desktop, {
+    width: 1070px;
+  });
+}

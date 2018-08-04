@@ -1,0 +1,41 @@
+@import "../../variables";
+
+.btnHref {
+  display: block;
+  width: 150px;
+  height: 58px;
+  line-height: 58px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  background: @bgColorBlack;
+  color: @textColorWhite;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.btnHref_scrollUp {
+  width: 20px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 25px;
+  font-weight: 700;
+
+  color: @textColorBlack;
+  background: transparent;
+
+  margin: 0 0 0 auto;
+}
+
+.btnHref_shoppingBasket {
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  padding: 0;
+  background: url("../img/shopping-basket-solid.svg") no-repeat center transparent;
+
+  .respondTo(desktop, {
+    margin-top: 20px;
+  });
+}

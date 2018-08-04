@@ -1,0 +1,11 @@
+@import "../../variables";
+
+.mainNav__link {
+  text-decoration: none;
+  color: @textColorBlack;
+}
+
+.mainNav__item_active .mainNav__link {
+  color: @textColorGrey;
+  .respondTo(tablet, {});
+}

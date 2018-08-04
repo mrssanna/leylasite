@@ -1,0 +1,29 @@
+@import "../../variables";
+
+.mainNav__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  .respondTo(tablet, {
+    display: flex;
+    justify-content: space-around;
+    //margin: 0 20px;
+  });
+
+  .respondTo(desktop, {
+    //margin: 0 40px;
+  });
+}
+
+.mainNav_closed .mainNav__items {
+  .respondTo (onlymobile, {
+    display: none;
+  });
+}
+
+.mainNav_nojs .mainNav__items {
+  .respondTo(onlymobile, {
+    display: block;
+  })
+}

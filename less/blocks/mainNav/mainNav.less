@@ -1,0 +1,20 @@
+@import "../../variables";
+
+.mainNav {
+  position: relative;
+  min-width: 320px;
+  min-height: 50px;
+  margin: 0 auto;
+
+  //background: #446fe6;
+
+  .respondTo(tablet, {
+    width: auto;
+    min-height: 56px;
+  });
+}
+
+.mainNav_closed .mainNav {
+  .respondTo (onlymobile, {
+  });
+}

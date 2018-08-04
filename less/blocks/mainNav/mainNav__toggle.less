@@ -1,0 +1,66 @@
+@import "../../variables";
+
+.mainNav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  z-index: 2;
+
+  display: block;
+  width: 23px;
+  height: 22px;
+
+  font-size: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  .respondTo(tablet, {
+    display: none;
+  });
+}
+
+//for only mobile
+.respondTo(onlymobile, {
+  .mainNav_closed .mainNav__toggle::before {
+    content: "";
+
+    position: absolute;
+    top: 1px;
+    left: 0;
+
+    width: 23px;
+    height: 3px;
+
+    background-color: @bgColorBlack;
+    box-shadow: 0 8px 0 0 @bgColorBlack, 0 16px 0 0 @bgColorBlack;
+  }
+
+  .mainNav_opened .mainNav__toggle {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+
+      width: 23px;
+      height: 3px;
+
+      background-color: @bgColorBlack;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  .mainNav_nojs .mainNav__toggle {
+    display: none;
+  }
+});

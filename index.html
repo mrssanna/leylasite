@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="pageContainer">
+    <header class="pageHeader">
+        <h1 class="visuallyHidden">Leylasolo Творческая мастерская и онлайн школа прикладного дизайна</h1>
+
+        <div class="logo">
+            <p class="logo__title">
+                Leylasolo
+            </p>
+            <p>
+                Творческая мастерская и онлайн школа прикладного дизайна
+            </p>
+        </div>
+
+        <a class="btnHref btnHref_shoppingBasket" href="shoppingbag.html">Открыть корзину</a>
+
+    </header>
+
+    <main class="pageMain">
+
+        <nav class="mainNav mainNav_closed mainNav_nojs">
+            <button class="mainNav__toggle" type="button">Открыть меню</button>
+
+            <ul class="mainNav__items">
+                <li class="mainNav__item mainNav__item_active">
+                    <a class="mainNav__link">Главная</a>
+                </li>
+                <li class="mainNav__item">
+                    <a class="mainNav__link" href="store.html">Магазин</a>
+                </li>
+                <li class="mainNav__item">
+                    <a class="mainNav__link" href="ideaslifehacks.html">Идеи и лайфхаки</a>
+                </li>
+                <li class="mainNav__item">
+                    <a class="mainNav__link" href="about.html">Обо мне</a>
+                </li>
+                <li class="mainNav__item">
+                    <a class="mainNav__link" href="reviews.html">Отзывы</a>
+                </li>
+            </ul>
+        </nav>
+
+        Товар , обучение онлайн, бесплатные МК
+
+    </main>
+
+    <footer class="pageFooter">
+        <a class="socialLink" href="https://www.instagram.com/leylasolo">instagram</a>
+
+        <p>Разработано <a href="#">TODO</a></p>
+    </footer>
+
+</div>
+
+<!-- script for open/close mobile menu -->
+<script>
+    var navMain = document.querySelector('.mainNav');
+    var navToggle = document.querySelector('.mainNav__toggle');
+
+    navMain.classList.remove('mainNav_nojs');
+
+    navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('mainNav_closed')) {
+            navMain.classList.remove('mainNav_closed');
+            navMain.classList.add('mainNav_opened');
+        } else {
+            navMain.classList.add('mainNav_closed');
+            navMain.classList.remove('mainNav_opened');
+        }
+    });
+</script>
+
+</body>
+</html>
