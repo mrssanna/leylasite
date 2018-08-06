@@ -8,6 +8,179 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="logo">
+        <p class="logo__title">
+            Leylasolo
+        </p>
+        <p>
+            Творческая мастерская и онлайн школа прикладного дизайна
+        </p>
+    </div>
+
+    <a class="btnHref btnHref_shoppingBasket" href="shoppingbag.html">Открыть корзину</a>
+
+    <nav class="mainNav mainNav_closed mainNav_nojs">
+        <button class="mainNav__toggle" type="button">Открыть меню</button>
+
+        <ul class="mainNav__items">
+            <li class="mainNav__item">
+                <a class="mainNav__link" href="blocks_library.html">blocks_library</a>
+            </li>
+
+
+            <li class="mainNav__item mainNav__item_active">
+                <a class="mainNav__link">Главная</a>
+            </li>
+            <li class="mainNav__item">
+                <a class="mainNav__link" href="store.html">Магазин</a>
+            </li>
+            <li class="mainNav__item">
+                <a class="mainNav__link" href="ideaslifehacks.html">Идеи и лайфхаки</a>
+            </li>
+            <li class="mainNav__item">
+                <a class="mainNav__link" href="about.html">Обо мне</a>
+            </li>
+            <li class="mainNav__item">
+                <a class="mainNav__link" href="reviews.html">Отзывы</a>
+            </li>
+        </ul>
+    </nav>
+
+    <p>***************************************************</p>
+
+    <a class="href" href="mailto:77leyla77@mail.ru">77leyla77@mail.ru</a> <br>
+
+    <a class="href" href="https://www.instagram.com/leylasolo">@leylasolo</a>
+
+    <button class="btn btn_putInBasket">В корзину</button>
+
+    <a class="btnHref btnHref_blockArticle" href="idea.html">Читать далее</a>
+
+    <input class="inputText" type="text" placeholder="Имя" name="userName">
+    <textarea class="inputTextArea" placeholder="Сообщение" name="userMassage"></textarea>
+    <button class="btn">Отправить</button>
+
+    <div class="blockArticle">
+        <p class="blockArticle__title">Пасхальное украшение Видео-урок</p>
+        <div class="blockArticle__img">
+            <img src="img/idea.png" width="280" height="280" alt="Пасхальное украшение">
+        </div>
+        <p class="blockArticle__summary">
+            Из всех идей больше нравятся те, что позволяют за 15 мин создать Пасхальную атмосферу, без особых
+            затрат и усилий. <a class="href" href="https://www.instagram.com/leylasolo">@leylasolo</a> Сможет каждый.
+        </p>
+        <a class="btnHref btnHref_blockArticle" href="idea.html">Читать далее</a>
+    </div>
+
+    <div class="blockReview">
+        <div class="blockReview__productName">
+            <p>Видео урок</p>
+        </div>
+        <p class="blockReview__customerName">Автор</p>
+        <div class="blockReview__reviewText">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad
+            alias aspernatur corporis facere ipsum iure labore laudantium maxime, nulla officiis quisquam soluta
+            voluptatibus. Commodi cupiditate inventore iure necessitatibus ut!
+        </div>
+    </div>
+
+    <table class="dataTable">
+        <tr>
+            <th>Продукт</th>
+            <th>Цена</th>
+            <th>Количество</th>
+            <th>Сумма</th>
+        </tr>
+        <tr>
+            <td>Видео урок</td>
+            <td>950 р.</td>
+            <td>1</td>
+            <td>950 р.</td>
+        </tr>
+        <tr>
+            <td>Видео урок</td>
+            <td>1500 р.</td>
+            <td>1</td>
+            <td>1500 р.</td>
+        </tr>
+        <tr>
+            <td colspan="3">Общая стоимость</td>
+            <td>2450 р.</td>
+        </tr>
+    </table>
+
+    <div>
+        <input type="radio" name="delivery" value="4" id="delivery4">
+        <label for="delivery4">Самовывоз г.Таганрог</label>
+    </div>
+
+    <ul class="methodList">
+        <li>
+            <input type="radio" name="payment" value="1" id="payment1">
+            <label for="payment1">Банковская карта</label>
+        </li>
+        <li>
+            <input type="radio" name="payment" value="2" id="payment2">
+            <label for="payment2">Яндекс деньги</label>
+        </li>
+        <li>
+            <input type="radio" name="payment" value="3" id="payment3">
+            <label for="payment3">Другое</label>
+        </li>
+    </ul>
+
+    <ul class="storeLinks">
+        <li><a class="href" href="">Товары</a></li>
+        <li><a class="href" href="">Видеоуроки</a></li>
+        <li><a class="href" href="">Мастер классы и вебинары</a></li>
+        <li><a class="href" href="">Материалы и инструменты</a></li>
+    </ul>
+
+    <div class="blockProduct">
+        <div class="blockProduct__photo">
+            <img src="img/product.png" alt="Часы">
+        </div>
+
+        <div class="blockProduct__label">
+            Предзаказ
+        </div>
+
+        <p class="blockProduct__name">Часы с рисунком</p>
+
+        <p class="blockProduct__price">1950 р.</p>
+
+        <p class="blockProduct__newPrice">1500 р.</p>
+
+        <button class="btn btn_putInBasket">В корзину</button>
+    </div>
+
+
+    <p>***************************************************</p>
+
+    <a class="socialLink" href="https://www.instagram.com/leylasolo">instagram</a>
+
+    <p>Разработано <a href="#">TODO</a></p>
+
+
+
+    <p>***************************************************</p>
+    <!-- script for open/close mobile menu -->
+    <script>
+        var navMain = document.querySelector('.mainNav');
+        var navToggle = document.querySelector('.mainNav__toggle');
+
+        navMain.classList.remove('mainNav_nojs');
+
+        navToggle.addEventListener('click', function() {
+            if (navMain.classList.contains('mainNav_closed')) {
+                navMain.classList.remove('mainNav_closed');
+                navMain.classList.add('mainNav_opened');
+            } else {
+                navMain.classList.add('mainNav_closed');
+                navMain.classList.remove('mainNav_opened');
+            }
+        });
+    </script>
 
 </body>
 </html>
