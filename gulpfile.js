@@ -111,13 +111,7 @@ gulp.task("build", function (fn) {
     );
 })
 
-
-gulp.task('deploy', function () {
-    return gulp.src("./build/**/*") //???
-        .pipe(deploy({
-            remoteUrl: "https://github.com/mrssanna/myproject.git",
-            branch: "master"
-        }))
+gulp.task('deploy', function() {
+    return gulp.src('./build/**/*')
+        .pipe(deploy());
 });
-
-//gulp deploy

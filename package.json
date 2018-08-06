@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Hello, World!\"",
     "build": "gulp build",
+    "deploy": "gulp deploy",
     "start": "npm run build && gulp serve"
   },
   "repository": {
