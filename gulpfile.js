@@ -13,7 +13,7 @@ var run = require("run-sequence");
 var del = require("del");
 var server = require("browser-sync").create();
 
-var deploy = require('gulp-gh-pages');
+var deploy = require('gulp-gh-pages-with-updated-gift');
 
 gulp.task("style", function (done) {
     gulp.src("less/style.less")
@@ -113,6 +113,6 @@ gulp.task("build", function (fn) {
  * Push build to gh-pages
  */
 gulp.task('deploy', function () {
-    return gulp.src("./build_gh_pages/**/*")
+    return gulp.src("./build/**/*")
         .pipe(deploy())
 });
