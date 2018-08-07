@@ -15,8 +15,6 @@ var server = require("browser-sync").create();
 
 var deploy = require('gulp-gh-pages');
 
-
-
 gulp.task("style", function (done) {
     gulp.src("less/style.less")
         .pipe(plumber())
@@ -111,7 +109,10 @@ gulp.task("build", function (fn) {
     );
 });
 
-gulp.task('deploy', function() {
-    return gulp.src('./build_gh_pages/**/*')
-        .pipe(deploy());
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+    return gulp.src("./build_gh_pages/**/*")
+        .pipe(deploy())
 });
