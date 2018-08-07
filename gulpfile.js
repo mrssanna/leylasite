@@ -32,7 +32,7 @@ gulp.task("style", function (done) {
         .pipe(gulp.dest("build/css"))
         .pipe(minify())
         .pipe(rename("style.min.css"))
-        .pipe(gulp.dest("build/css"))
+        .pipe(gulp.dest("build/css"));
         //.pipe(server.stream());
         server.reload();
         done();
@@ -60,7 +60,7 @@ gulp.task("symbols", function () {
 
         .pipe(rename("symbols.svg"))
         .pipe(gulp.dest("build/img"));
-})
+});
 
 gulp.task("copy", function () {
     return gulp.src([
@@ -72,11 +72,11 @@ gulp.task("copy", function () {
         base: "."
         })
         .pipe(gulp.dest("build"));
-})
+});
 
 gulp.task("clean", function () {
     return del("build");
-})
+});
 
 gulp.task("html:copy", function () {
     return gulp.src("*.html")
@@ -109,9 +109,9 @@ gulp.task("build", function (fn) {
         "symbols",
         fn
     );
-})
+});
 
 gulp.task('deploy', function() {
-    return gulp.src('./build/**/*')
+    return gulp.src('./build_gh_pages/**/*')
         .pipe(deploy());
 });
