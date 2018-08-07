@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Корзина</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="pageContainer">
+    <header class="pageHeader">
+
+        <h1 class="visuallyHidden">Leylasolo Творческая мастерская и онлайн школа прикладного дизайна</h1>
+
+        <div class="logo">
+            <p class="logo__title">
+                Leylasolo
+            </p>
+            <p>
+                Творческая мастерская и онлайн школа прикладного дизайна
+            </p>
+        </div>
+
+        <a class="btnHref btnHref_shoppingBasket" href="shoppingbag.html">Открыть корзину</a>
+
+        <nav class="mainNav mainNav_closed mainNav_nojs">
+            <button class="mainNav__toggle" type="button">Открыть меню</button>
+
+            <ul class="mainNav__items">
+                <li class="mainNav__item">
+                    <a class="mainNav__link" href="index.html">Главная</a>
+                </li>
+                <li class="mainNav__item">
+                    <a class="mainNav__link" href="store.html">Магазин</a>
+                </li>
+                <li class="mainNav__item">
+                    <a class="mainNav__link" href="ideaslifehacks.html">Идеи и лайфхаки</a>
+                </li>
+                <li class="mainNav__item mainNav__item_active">
+                    <a class="mainNav__link">Обо мне</a>
+                </li>
+                <li class="mainNav__item">
+                    <a class="mainNav__link" href="reviews.html">Отзывы</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="shoppingBag shoppingBag_full">
+        <p class="emptyShoppingBagText">Корзина пуста</p>
+
+        <div class="buyInfo">
+            <p>Корзина</p>
+
+            <table class="dataTable">
+                <tr>
+                    <th>Продукт</th>
+                    <th>Цена</th>
+                    <th>Количество</th>
+                    <th>Сумма</th>
+                </tr>
+                <tr>
+                    <td>Видео урок</td>
+                    <td>950 р.</td>
+                    <td>1</td>
+                    <td>950 р.</td>
+                </tr>
+                <tr>
+                    <td>Видео урок</td>
+                    <td>1500 р.</td>
+                    <td>1</td>
+                    <td>1500 р.</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Общая стоимость</td>
+                    <td>2450 р.</td>
+                </tr>
+            </table>
+
+            <!--Кнопка Удалить товар-->
+
+            <form class="form form_shoppingBagForm" action="" method="post">
+                <div class="form__section">
+                    <p>Выберите способ доставки:</p>
+
+                    <!--
+                    <ul class="methodList">
+                        <li>
+                            <input type="radio" name="delivery" value="1" id="delivery1">
+                            <label for="delivery1">Видеокурсы/доступ в обучающий профиль</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="delivery" value="2" id="delivery2">
+                            <label for="delivery2">Почта России</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="delivery" value="3" id="delivery3">
+                            <label for="delivery3">Транспортная компания</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="delivery" value="4" id="delivery4">
+                            <label for="delivery4">Самовывоз г.Таганрог</label>
+                        </li>
+                    </ul>
+                    -->
+
+                    <table class="dataTable">
+                        <tr>
+                            <th>Возможные варианты доставки</th>
+                            <th>Цена</th>
+                        </tr>
+                            <td>
+                                <input type="radio" name="delivery" value="1" id="delivery1">
+                                <label for="delivery1">Видеокурсы/доступ в обучающий профиль</label>
+                            </td>
+                            <td>
+                                0 р.
+                            </td>
+                        <tr>
+                            <td>
+                                <input type="radio" name="delivery" value="2" id="delivery2">
+                                <label for="delivery2">Почта России</label>
+                            </td>
+                            <td>
+                                0 р.
+                            </td>
+                        </tr>
+                            <td>
+                                <input type="radio" name="delivery" value="3" id="delivery3">
+                                <label for="delivery3">Транспортная компания</label>
+                            </td>
+                            <td>
+                                0 р.
+                            </td>
+                        <tr>
+                            <td>
+                                <input type="radio" name="delivery" value="4" id="delivery4">
+                                <label for="delivery4">Самовывоз г.Таганрог</label>
+                            </td>
+                            <td>
+                                0 р.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Итоговая сумма к оплате:
+                            </td>
+                            <td>
+                                2450 р.
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!--<p>Итоговая сумма к оплате: <span>2450 р.</span></p>-->
+                </div>
+
+                <div class="form__section">
+                    <ul class="methodList">
+                        <li>
+                            <input type="radio" name="payment" value="1" id="payment1">
+                            <label for="payment1">Банковская карта</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="payment" value="2" id="payment2">
+                            <label for="payment2">Яндекс деньги</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="payment" value="3" id="payment3">
+                            <label for="payment3">Другое</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="form__section form__section_customerInfo">
+                    <p>Заполните ваши данные:</p>
+                    <input class="inputText" type="text" placeholder="Фамилия*" name="userName" required>
+                    <input class="inputText" type="text" placeholder="Имя*" name="userSurname" required>
+                    <input class="inputText" type="text" placeholder="Отчество*" name="patronymic" required>
+                    <input class="inputText" type="text" placeholder="Регион/Область/Край*" name="region" required>
+                    <input class="inputText" type="text" placeholder="Населенный пункт*" name="place" required>
+                    <input class="inputText" type="text" placeholder="Улица*" name="street" required>
+                    <input class="inputText" type="text" placeholder="Номер дома*" name="houseNumber" required>
+                    <input class="inputText" type="text" placeholder="Номер квартиры*" name="flatNumber" required>
+                    <input class="inputText" type="text" placeholder="Почтовый индекс*" name="postalCode" required>
+                    <input class="inputText" type="text" placeholder="Название аккаунта в инстаграм" name="instagramUser">
+                    <input class="inputText" type="tel" placeholder="Телефон*" name="userPhone">
+                    <input class="inputText" type="email" placeholder="E-mail*" required name="userEmail">
+                    <input class="inputText" type="text" placeholder="Паспортные данные" name="pasportInfo">
+                    <textarea class="inputTextArea" placeholder="Ваш комментарий" name="userMassage"></textarea>
+                    <button class="btn">Оформить покупку</button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+    <footer class="pageFooter">
+        <a class="btnHref btnHref_scrollUp" href="#">^</a>
+
+        <a class="socialLink" href="https://www.instagram.com/leylasolo">instagram</a>
+
+        <p>Разработано <a href="">TODO</a></p>
+    </footer>
+
+</div>
+
+<!-- script for open/close mobile menu -->
+<script>
+    var navMain = document.querySelector('.mainNav');
+    var navToggle = document.querySelector('.mainNav__toggle');
+
+    navMain.classList.remove('mainNav_nojs');
+
+    navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('mainNav_closed')) {
+            navMain.classList.remove('mainNav_closed');
+            navMain.classList.add('mainNav_opened');
+        } else {
+            navMain.classList.add('mainNav_closed');
+            navMain.classList.remove('mainNav_opened');
+        }
+    });
+</script>
+
+
+</body>
+</html>
