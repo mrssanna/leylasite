@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/picturefill.min.js"></script>
 </head>
 <body>
 <div class="pageContainer">
@@ -82,7 +84,13 @@
             </div>
 
             <div class="aboutMePhoto">
-                <img src="img/Leyla_photo_desktop.jpg" alt="Leyla">
+                <picture>
+                    <source srcset="img/Leyla_photo_desktop.jpg" media="(min-width: 1200px)">
+                    <source srcset="img/Leyla_photo_tablet.jpg" media="(min-width: 768px)">
+                    <img srcset="img/Leyla_photo_mobile.jpg" alt="Leylasolo">
+                </picture>
+
+                <!--<img src="img/Leyla_photo_desktop.jpg" alt="Leyla">-->
             </div>
         </div>
 

@@ -196,6 +196,9 @@ textarea {
   padding: 0;
   background: url("../img/shopping-basket-solid.svg") no-repeat center transparent;
 }
+.btnHref_slider {
+  background: rgba(232, 232, 232, 0.5);
+}
 .blocksContainer {
   width: 280px;
   margin: 0 auto;
