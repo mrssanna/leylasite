@@ -65,7 +65,7 @@
 }
 .aboutMePhoto {
   width: 280px;
-  height: 314px;
+  height: 420px;
   margin: 20px auto;
 }
 .aboutMePhoto img {
@@ -330,7 +330,7 @@ tr {
   }
   .aboutMePhoto {
     width: 344px;
-    height: 410px;
+    height: 525px;
     margin: 20px 0 0 0;
   }
   .aboutSite {
