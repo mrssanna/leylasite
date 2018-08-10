@@ -11,3 +11,5 @@ test/
 
 Thumbs.db
 .DS_Store
+
+*.log
