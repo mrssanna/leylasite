@@ -251,6 +251,9 @@ textarea {
   top: 30px;
   right: 10px;
 }
+.blockProduct__name {
+  font-weight: 700;
+}
 .blockProduct__newPrice {
   color: #ff0000;
   font-weight: 700;
@@ -274,16 +277,17 @@ textarea {
   width: 100%;
   border-collapse: collapse;
 }
-.dataTable th,
-td,
-tr {
-  border: solid #b3b3b3 1px;
+.dataTable th {
+  border-bottom: solid #b3b3b3 1px;
 }
 /*
 .dataTable th, td {
   border-bottom: solid @borderColorGrey 1px;
 }
 */
+.dataTable tr:nth-child(2n) {
+  background: #b3b3b3;
+}
 .methodList {
   list-style: none;
   padding: 0;
