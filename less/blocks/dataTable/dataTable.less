@@ -3,10 +3,11 @@
 .dataTable {
   width: 100%;
   border-collapse: collapse;
+  //text-align: center;
 }
 
-.dataTable th, td, tr {
-  border: solid @borderColorGrey 1px;
+.dataTable th {
+  border-bottom: solid @borderColorGrey 1px;
 }
 
 /*
@@ -14,3 +15,11 @@
   border-bottom: solid @borderColorGrey 1px;
 }
 */
+
+.dataTable tr:nth-child(2n) {
+    background: @bgColorLightGrey;
+   } 
+
+.dataTable_delivery {
+	//text-align: left;
+}

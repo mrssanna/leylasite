@@ -1,3 +1,20 @@
+@import "../../variables";
+
+.blockProduct__photo {
+  width: 280px;
+  height: 280px;
+
+  .respondTo(tablet, {
+    width: 216px;
+    height: 216px;
+  });
+
+  .respondTo(desktop, {
+    width: 330px;
+    height: 330px;
+  });
+}
+
 .blockProduct__photo img {
   width: inherit;
   height: inherit;
