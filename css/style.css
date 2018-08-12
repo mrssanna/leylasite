@@ -313,6 +313,9 @@ textarea {
 .dataTable tr:nth-child(2n) {
   background: #f0f0f0;
 }
+.dataTable_products {
+  text-align: center;
+}
 .methodList {
   list-style: none;
   padding: 0;
