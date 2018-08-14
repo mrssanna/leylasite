@@ -17,6 +17,9 @@
   text-align: center;
   height: 50px;
   line-height: 50px;
+  background: #E6E6FA;
+  padding: 0 20px;
+  border-radius: 30px;
 }
 .mainNav__items {
   list-style: none;
@@ -289,7 +292,11 @@ textarea {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.articleDetail__img {
+  margin: 20px auto;
+}
 .articleDetail__img img {
+  margin: 0 auto;
   width: inherit;
   height: inherit;
   -o-object-fit: cover;
@@ -297,6 +304,16 @@ textarea {
 }
 .articleDetail__title {
   text-align: center;
+  font-size: 23px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.articleDetail__video {
+  background: #f0f0f0;
+  margin: 20px 0;
+}
+.articleDetail__photoSlider {
+  margin: 20px 0;
 }
 .dataTable {
   width: 100%;
@@ -337,6 +354,9 @@ textarea {
 }
 .blockReview__reviewText {
   font-style: italic;
+}
+.photoSlider {
+  margin: 20px 0;
 }
 .madeBy {
   font-size: 11px;
@@ -415,7 +435,7 @@ textarea {
   }
   .storeLinks {
     text-align: center;
-    margin: 0 0 40px 0;
+    margin: 20px 0 40px 0;
   }
   .storeLinks li {
     display: inline-block;
@@ -439,9 +459,6 @@ textarea {
     width: 216px;
     height: 216px;
   }
-  .articleDetail__img {
-    margin: 0 auto;
-  }
 }
 @media (min-width: 1200px) {
   .pageContainer {
@@ -460,6 +477,10 @@ textarea {
   }
   .contacts {
     width: 500px;
+  }
+  .btnHref_shoppingBasket {
+    width: 60px;
+    height: 60px;
   }
   .btnHref_shoppingBasket {
     margin-top: 20px;
